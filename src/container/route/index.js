@@ -1,13 +1,14 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import LoginPage from "../LoginPage";
+import HomePage from "../HomePage";
 
 export default function RoutePage() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path={"/login"} element={<LoginPage/>}/>
-                <Route path={"/"} element={"acceuil"}/>
-                <Route path={"/home_page"} element={"home page"}/>
+                <Route path={"/"} element={<HomePage/>}/>
+                <Route path={"/home_page"} element={<HomePage/>}/>
             </Routes>
         </BrowserRouter>
     );

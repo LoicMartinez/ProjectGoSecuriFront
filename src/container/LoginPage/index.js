@@ -43,7 +43,8 @@ function LoginPage() {
     const doHandleSubmit = useCallback(
         (evt) => {
             evt.preventDefault();
-            Api.login(values.login, values.password)
+            navigation('/home')
+            /*Api.login(values.login, values.password)
                 .then(response => {
                         if (!response) {
                             setLoginError(true);
@@ -53,7 +54,7 @@ function LoginPage() {
                             navigation('/');
                         }
                     }
-                )
+                )*/
             ;
         }
         , [values, navigation, setUser]);
