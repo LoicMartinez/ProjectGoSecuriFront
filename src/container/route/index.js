@@ -11,7 +11,7 @@ export default function RoutePage() {
                 <Route path={"/"} element={<HomePage/>}/>
                 <Route path={"/home_page"} element={<HomePage/>}/>
                 <Route path={"/facialRecognition"} element={<FacialRecognitionLoginPage/>}/>
-            </Routes>F
+            </Routes>
         </BrowserRouter>
     );
 }
